@@ -13,6 +13,7 @@ let ZhuClient = function (url, id) {
 
         if (dataStr === "ping") {
             this.ws.send("pong")
+            return;
         }
 
         let data = JSON.parse(dataStr)
