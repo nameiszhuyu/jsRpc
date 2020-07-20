@@ -255,7 +255,7 @@ func main() {
 	})
 
 	// 注册接口
-	http.HandleFunc("/register", func(w http.ResponseWriter, r *http.Request) {
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		/*
 			1. 校验是否已经有了，有了的话，直接返回，不做操作
 			2. 创建ws的链接
